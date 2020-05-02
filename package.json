@@ -1,0 +1,15 @@
+{
+  "name": "covid-19-app",
+  "version": "1.0.0",
+  "description": "covid-19 update app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "start": "node app.js"
+  },
+  "author": "samson ugwu ekene",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

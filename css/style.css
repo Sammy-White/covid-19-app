@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-nav{
+    position: fixed;
+    width: 100%;
+    background-color: #343a40;
+    height: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    padding: 0px 20px;
+}
+
+.top-nav .top-left a{
+    text-decoration: none;
+    color: orange;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.top-nav .top-left .about {
+    padding-left: 10px;
+}
+
+.top-nav .top-left a:hover{
+    color: white;  
+}
+
+.top-nav .top-right input[type=text]{
+    padding: 6px;
+    width: 400px;
+    height: 30px;
+    font-size: 17px;
+    border: none;
+}
+
+.top-nav .top-right button{
+    padding: 6px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: orange;
+}
+
+.top-nav .top-right button:hover{
+    background-color:#343a40;
+    color: white;
+}
+
+
+.body-content{
+    background-color: #343a40;
+    height: auto;
+}
+
+.info{
+    background-color: #96a5b4;
+    border-left: 6px solid #2196F3;
+    margin-bottom: 15px;
+    padding: 4px 12px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.rotate {
+  animation: rotation 8s infinite linear;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  padding-top: 80px;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#record{
+    text-align: center;
+    font-size: x-large;
+    color: white;
+    text-transform: uppercase;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.global {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.global .confirmed button{
+    border: 2px solid orange;
+    background-color: orange;
+    padding: 20px 50px 20px 50px;
+    width: 250px;
+    font-size: large;
+ 
+}
+.global .deaths button {
+   border: 2px solid red;
+    background-color:  red;
+    padding: 20px 50px 20px 50px;
+    width: 250px;
+    font-size: large;
+}
+.global .recovered button{
+    border: 2px solid green;
+    background-color: green;
+    padding: 20px 50px 20px 50px;
+    width: 250px;
+    font-size: large;
+}
+#country {
+     text-align: center;
+    font-size: x-large;
+    color: white;
+    text-transform: uppercase;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.country-update{
+     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+.country-update .confirmed button{
+     border: 2px solid orange;
+    background-color: orange;
+    padding: 20px 50px 20px 50px;
+    width: 250px;
+    font-size: small;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.country-update .confirmed h3{
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+}
+.country-update .deaths button{
+    border: 2px solid red;
+    background-color:  red;
+    padding: 20px 50px 20px 50px;
+    width: 250px;
+     font-size: small;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.country-update .deaths h3{
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+}
+.country-update .recovered button{
+    border: 2px solid green;
+    background-color: green;
+    padding: 20px 50px 20px 50px;
+    width: 250px;
+     font-size: small;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.country-update .recovered h3{
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.chart-container {
+  position: relative;
+  margin: auto;
+  height: 80vh;
+  width: 70vw;
+}
+
+
+.about-section button{
+    background-color: green;
+    width: 100%;
+    height: 30px;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+.about-section p{
+    color: white;
+    text-align: justify;
+    padding: 15px 20px 0px 20px;
+    line-height: 1.5rem;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 350px;
+    color: white;
+}
+footer .footer-one{
+    padding-left: 10px;
+}
+footer .footer-two li{
+    display: inline-block;
+    list-style-type: none;
+    padding-right: 10px;
+}
+
+i{
+    color: white;
+    font-size: 30px;
+}
+
+i:hover{
+    color: orange;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    .top-nav{
+    position: fixed;
+    width: 100%;
+    background-color: #343a40;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 999;
+    padding: 0px 20px;
+}
+    .top-nav .top-right input[type=text]{
+    padding: 6px;
+    width: 150px;
+    height: 30px;
+    font-size: 14px;
+    border: none;
+}
+.top-nav .top-left h2{
+    color: white;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.top-nav .top-left h2:hover{
+    color: orange;  
+}
+
+.global {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.global .confirmed {
+    padding-bottom: 15px;
+}
+.global .deaths{
+    padding-bottom: 15px;
+}
+.country-update{
+     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.country-update .confirmed{
+    padding-bottom: 25px;
+}
+.country-update .deaths{
+    padding-bottom: 25px;
+}
+.body-content{
+    background-color: #343a40;
+    height: auto;
+}
+.chart-container {
+  position: relative;
+  margin: auto;
+  height: 80vh;
+  width: 90vw;
+}
+
+.rotate {
+  animation: rotation 8s infinite linear;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  padding-top: 80px;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 350px;
+    color: white;
+    font-size: 12px;
+}
+footer .footer-one{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+footer .footer-two li{
+    display: inline-block;
+    list-style-type: none;
+    padding-right: 10px;
+}
+
+i{
+    color: white;
+    font-size: 20px;
+}
+
+}

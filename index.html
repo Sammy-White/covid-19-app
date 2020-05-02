@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 App</title>
+    <script src="./js/Chart.js"></script>
+    <link rel="icon" href="./images/logo192.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+</head>
+
+<body>
+    <div class="top-nav">
+        <div class="top-left">
+            <a href="">covid-19 </a>
+            <a href="#about_page" class="about">about</a>
+        </div>
+        <div class="top-right">
+            <form action="">
+                <input type="text" name="search" placeholder="Enter your country" id="input">
+                <button type="button" id="btn">search</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="body-content">
+
+        <div class="logo">
+            <img src="./images/logo192.png" alt="logo" class="rotate">
+        </div>
+
+        <div class="info">
+            <p><strong>Note:</strong> Countries can be searched using lower case charater all through. Countries whose
+                name is
+                more than a word can be searched using hyphen (-) in between words (e.g united-states).</p>
+        </div>
+
+        <h2 id="record">global update</h2>
+        <div class="global">
+            <div class="confirmed">
+                <button id="g1"></button>
+            </div>
+            <div class="deaths">
+                <button id="g2"></button>
+            </div>
+            <div class="recovered">
+                <button id="g3"></button>
+            </div>
+        </div>
+
+
+        <h2 id="country">country update</h2>
+        <div class="country-update">
+            <div class="confirmed">
+                <button>total confirmed</button>
+                <h3 id="fig1"></h3>
+            </div>
+            <div class="deaths">
+                <button>total death</button>
+                <h3 id="fig2"></h3>
+            </div>
+            <div class="recovered">
+                <button>total recovered</button>
+                <h3 id="fig3"></h3>
+            </div>
+        </div>
+
+
+        <div class="chart-container">
+            <canvas id="chart"></canvas>
+        </div>
+
+        <div class="about-section" id="about_page">
+            <button id="app" onclick="typeWriter()">About the App</button>
+            <p id="para"></p>
+        </div>
+
+
+
+        <footer>
+
+            <div class="footer-one">
+                &copy; 2020 Covid-19. All rights reserved | Design and Developed by <b>Ugwu Samson Ekene</b>
+            </div>
+
+
+            <div class="footer-two">
+                <ul>
+                    <li><a href="https://github.com/Sammy-White"><i class="fab fa-github"></i></a></li>
+                    <li><a href="www.linkedin.com/in/samson-ugwu-04888918b"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://web.facebook.com/ugwu.samson.37"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/SammyWhite882"><i class="fab fa-twitter-square"></i></a></li>
+                    <li><a href="https://www.instagram.com/sammy_wite"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+
+        </footer>
+
+
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/about.js"></script>
+
+</body>
+
+</html>
